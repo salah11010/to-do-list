@@ -1,0 +1,37 @@
+body{
+    background-color: aquamarine;
+    width: 100%;
+}
+.first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;   
+}
+.saisi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.show{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 5px solid black;
+    width: 50%;
+    height: 50%;
+    background-color: aliceblue;   
+    margin-top: 50px;
+    margin-left: 300px;
+}
+.tow-tables{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+.table{
+    border: 5px solid black;
+    margin: 20px;
+    padding: 25px;
+}
