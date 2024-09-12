@@ -1,44 +1,82 @@
-body{
-    background-color: aquamarine;
-    width: 100%;
+/* Style général pour la page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
 }
-.first{
+
+/* Style pour chaque section de table */
+.table {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+/* Style au survol des tables */
+.table:hover {
+    transform: translateY(-5px);
+}
+
+/* Style pour les titres des sections */
+.table h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 10px;
+}
+
+/* Style pour les listes dans chaque table */
+.table ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Style pour chaque élément de la liste */
+.table ul li {
+    background-color: #f1f1f1;
+    padding: 12px;
+    margin-bottom: 8px;
+    border-radius: 5px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    flex-direction: column;
+    transition: background-color 0.2s ease;
 }
-.saisi{
+
+/* Style pour chaque élément au survol */
+.table ul li:hover {
+    background-color: #e0e0e0;
+}
+
+/* Style pour les boutons à l'intérieur des éléments de la liste */
+.table ul li button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+/* Changement de couleur au survol des boutons */
+.table ul li button:hover {
+    background-color: #45a049;
+}
+
+/* Espacement entre les colonnes */
+.tow-tables {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
 }
-.show{
-    border: 5px solid black;
-    width: 75%;
-    height: 75%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: aliceblue;   
-    margin-top: 50px;
-    margin-left: 170px;
-}
-.tow-tables{
-    display: flex;
-    justify-content: center;
-    align-items: center;   
-}
-.table{
-    border: 5px solid rgb(166, 154, 154);
-    margin: 20px;
-    padding: 25px;
-    width: 400px;
-    height: 250px;
-}
-.liiist{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+.tow-tables .table {
+    width: 48%; /* Chaque table occupe 48% de la largeur du conteneur */
 }
