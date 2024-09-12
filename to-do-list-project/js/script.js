@@ -11,6 +11,8 @@ function showList(){
         notimportantbuturgency[j].style.display = "block";
     }
 }
+
+
 function addToList() {
     let nouveau = document.getElementById("nouveau").value;
     let choix = document.getElementById("choix").value;
@@ -26,6 +28,10 @@ function addToList() {
     let newElementButton = document.createElement("button");
     newElementButton.textContent = "modifier";
 
+    // créer un boutton pour "supprimer"
+    let newElementRemove = document.createElement("button");
+    newElementRemove.textContent = "Supprimer";
+
     // Style du <li> pour aligner le texte et le bouton
     newElement.style.display = "flex";
     newElement.style.justifyContent = "space-between";
@@ -34,6 +40,7 @@ function addToList() {
     // Ajouter le contenu et le bouton à l'élément <li>
     newElement.appendChild(newElementContent);
     newElement.appendChild(newElementButton);
+    newElement.appendChild(newElementRemove);
 
     // Ajouter un événement au bouton "modifier"
     newElementButton.addEventListener("click", 
@@ -59,9 +66,16 @@ function addToList() {
              // Remplacer à nouveau l'input et le bouton "Enregistrer" par le paragraphe et le bouton "modifier"
             newElement.replaceChild(newElementContent, inputForEdit);
             newElement.replaceChild(newElementButton, saveButton);
-        }); 
+        });
 });
 
+newElementRemove.addEventListener("click", 
+    function(){
+        newElement.removeChild(newElementButton);
+        newElement.removeChild(newElementRemove);
+        newElement.removeChild(newElementContent);
+    }
+)
 
          //Ajouter l'élément <li> à la liste correspondante
     if (choix === "important-and-urgency") {
