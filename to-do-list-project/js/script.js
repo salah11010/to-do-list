@@ -36,7 +36,31 @@ function addToList() {
     newElement.style.display = "flex";
     newElement.style.justifyContent = "space-between";
     newElement.style.alignItems = "center";
-
+    newElementButton.style.backgroundColor = "#4CAF50"; // Couleur de fond
+    newElementButton.style.color = "white"; // Couleur du texte
+    newElementButton.style.border = "none"; // Pas de bordure
+    newElementButton.style.padding = "12px 24px"; // Espacement interne
+    newElementButton.style.textAlign = "center"; // Alignement du texte
+    newElementButton.style.textDecoration = "none"; // Pas de soulignement
+    newElementButton.style.display = "inline-block"; // Alignement en ligne
+    newElementButton.style.fontSize = "16px"; // Taille du texte
+    newElementButton.style.borderRadius = "8px"; // Coins arrondis
+    newElementButton.style.transition = "background-color 0.3s ease"; // Transition douce pour la couleur de fond
+    newElementButton.style.cursor = "pointer"; // Curseur en forme de main
+    newElementButton.style.boxShadow = "0 4px 6px rgba(0, 0, 0, 0.1)"; // Ombre portée
+    newElementRemove.style.backgroundColor = "#f44336"; // Couleur de fond rouge (suppression)
+    newElementRemove.style.color = "white"; // Couleur du texte en blanc
+    newElementRemove.style.border = "none"; // Pas de bordure
+    newElementRemove.style.padding = "12px 24px"; // Espacement interne
+    newElementRemove.style.textAlign = "center"; // Centrer le texte
+    newElementRemove.style.textDecoration = "none"; // Pas de soulignement
+    newElementRemove.style.display = "inline-block"; // Inline pour l'alignement
+    newElementRemove.style.fontSize = "16px"; // Taille du texte
+    newElementRemove.style.borderRadius = "8px"; // Coins arrondis
+    newElementRemove.style.transition = "background-color 0.3s ease"; // Transition douce pour les changements
+    newElementRemove.style.cursor = "pointer"; // Curseur en forme de main
+    newElementRemove.style.boxShadow = "0 4px 6px rgba(0, 0, 0, 0.1)"; // Ombre portée
+    newElementContent.style.paddingRight = "100px"
     // Ajouter le contenu et le bouton à l'élément <li>
     newElement.appendChild(newElementContent);
     newElement.appendChild(newElementButton);
