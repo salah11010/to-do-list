@@ -6,7 +6,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;   
+    flex-direction: column;
 }
 .saisi{
     display: flex;
@@ -14,16 +14,16 @@ body{
     align-items: center;
 }
 .show{
+    border: 5px solid black;
+    width: 75%;
+    height: 75%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: 5px solid black;
-    width: 50%;
-    height: 50%;
     background-color: aliceblue;   
     margin-top: 50px;
-    margin-left: 300px;
+    margin-left: 170px;
 }
 .tow-tables{
     display: flex;
@@ -31,7 +31,14 @@ body{
     align-items: center;   
 }
 .table{
-    border: 5px solid black;
+    border: 5px solid rgb(166, 154, 154);
     margin: 20px;
     padding: 25px;
+    width: 400px;
+    height: 250px;
+}
+.liiist{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
